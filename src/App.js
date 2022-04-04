@@ -9,10 +9,14 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" exact element={<MainPage />} />
-          <Route path="users/:userName" exact element={<RepoList />} />
+          <Route path="/github-viewer/" exact element={<MainPage />} />
           <Route
-            path="users/:userName/repos/:repoName"
+            path="github-viewer/users/:userName"
+            exact
+            element={<RepoList />}
+          />
+          <Route
+            path="github-viewer/users/:userName/repos/:repoName"
             exact
             element={<RepoView />}
           />

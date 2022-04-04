@@ -56,7 +56,7 @@ function RepoList() {
             >
               <Box p={1}>
                 <Link
-                  to={`/users/${userName}/repos/${row.name}`}
+                  to={`/github-viewer/users/${userName}/repos/${row.name}`}
                   style={{ textDecoration: "none" }}
                 >
                   {row.name}

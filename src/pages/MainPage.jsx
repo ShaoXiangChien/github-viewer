@@ -21,7 +21,10 @@ function MainPage() {
           onChange={handleChange}
           variant="filled"
         />
-        <Link to={`/users/${userName}`} style={{ textDecoration: "none" }}>
+        <Link
+          to={`/github-viewer/users/${userName}`}
+          style={{ textDecoration: "none" }}
+        >
           <Button variant="contained" style={{ marginLeft: 20, marginTop: 8 }}>
             Go
           </Button>
